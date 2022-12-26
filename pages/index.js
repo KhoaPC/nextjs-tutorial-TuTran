@@ -10,6 +10,10 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <>
+    <Head>
+      <title>NextJS | Home</title>
+      <meta name="keywords" content="NextJS"/>
+    </Head>
       <h1>HOME PAGE</h1>
       <h1>Hello NextJS</h1>
     </>

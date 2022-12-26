@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 
@@ -5,7 +6,6 @@ function NotFound() {
   const router = useRouter();
 
   useEffect(() => {
-    // Sau 5s điều hướng về trang chủ
     setTimeout(() => {
       router.push("/");
     }, 5000);
@@ -13,6 +13,10 @@ function NotFound() {
 
   return (
     <>
+      <Head>
+        <title>Page Not Found</title>
+        <meta name="keywords" content="NextJS" />
+      </Head>
       <h2>Oooops....</h2>
       <h1>Page Not Found</h1>
     </>
