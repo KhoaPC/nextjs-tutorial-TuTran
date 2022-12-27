@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-## Getting Started
+### Create next app with command `create-next-app`
 
 First, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## **NextJS Basic**
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+- What is NextJS ?
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+  > Next.js là một open-source React front-end framework. Next.js được xây dựng dựa trên thư viện React có nghĩa là Next.js lấy những lợi thế của React và bổ sung các tính năng.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- Why use NextJS ?
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+  > - Được nâng cấp và hổ trợ nhiều tính năng hơn so với React.
+  > - Hiệu năng tốt hơn so với ứng dụng `CSR` (Client site rendering).
+  > - Mang lại khả năng SEO tốt hơn mà `CSR` không có.
 
-## Learn More
+- When to use NextJS ?
+  > - Xây dựng `E-commerce Websites `(trang thương mại điện tử).
+  > - Xây dựng `Landing Page` | `SPA` (Single-Page Application) (Trang đích).
+  > - Xây dựng trang web tĩnh (tiktok...).
+  > - Khi `SEO` (Search Engine Optimization) được chú trọng.
 
-To learn more about Next.js, take a look at the following resources:
+### Some features of NextJS:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### loading="lazy" Observer onError
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Image Optimization (optional | NOT recommended | `nex.config.js` allowed origins):
+  > Tự động tối ưu hóa hình ảnh, cho phép thay đổi kích thước. Tối ưu hóa hình ảnh theo yêu cầu, điều này không làm giảm tốc độ tải của website.
+- Zero Config:
+  > Tự động thực hiện biên dịch và đóng gói tự động. Tối ưu hóa cho sản phẩm ngay từ đầu.
+- TypeScript Support:
+  > Tự động hỗ trợ cấu hình TypeScript và biên dịch.
+- Fast Refresh:
+  > Cho phép phản hồi tức thời về các chỉnh sửa được thực hiện đối với các thành phần trên dự án của bạn. Đỉnh điểm là chỉnh sửa các hiển thị nhanh trong vòng một đến hai giây mà không làm mất trạng thái hiện tại.
+- File-system Routing:
+  > Cung cấp một bộ định tuyến dựa trên hệ thống các tệp được xây dựng trong folder pages. Khi tệp được thêm vào thư mục pages, nó sẽ được tạo dựng sẳn dưới dạng một tuyến.
+- API Routes:
+  > Có thể tạo điểm cuối API trong ứng dụng Nextjs. Các tuyến API hoạt động dưới dạng `/pages/api/` trong thư mục và được hướng tới api điểm cuối thư mục.
+- Hybrid `SSG`(Static site generator) và `SSR`(Severside rendering):
+  > Sử dụng cơ chế `Pre-render` để `buil-time` và `request time` ở trong dự án SSR.
+   <!-- - Code-splitting and Bundling: -->
+   <!-- - Built-In CSS Support: -->
+   <!-- - Incremental Static Regeneration: -->
+   <!-- - Internationalization: -->
+   <!-- - Next.JS Analytics: -->
 
-## Deploy on Vercel
+<!--
+file `pages/404.js` truy cập khi NextJS không tìm thấy route muốn truy cập
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+route `/about` => `pages/about.js`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+route `/user` => `pages/user/index.js`
+
+      `/user/id` => `pages/user/[id].js` (dynamic route)
+
+      // file-based routing
+
+function : getStaticProps, 
+
+// _app.js | _document.js
+
+// ssr (server-side rendering)
+
+// ssg (static site generation)
+
+// api
+ -->
