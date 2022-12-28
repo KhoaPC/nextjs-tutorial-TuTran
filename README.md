@@ -18,16 +18,7 @@ npm run dev
   > - Hiệu năng tốt hơn so với ứng dụng `CSR` (Client site rendering).
   > - Mang lại khả năng SEO tốt hơn mà `CSR` không có.
 
-- When to use NextJS ?
-  > - Xây dựng `E-commerce Websites `(trang thương mại điện tử).
-  > - Xây dựng `Landing Page` | `SPA` (Single-Page Application) (Trang đích).
-  > - Xây dựng trang web tĩnh (tiktok...).
-  > - Khi `SEO` (Search Engine Optimization) được chú trọng.
-
 ### Some features of NextJS:
-
-### loading="lazy" Observer onError
-
 - Image Optimization (optional | NOT recommended | `nex.config.js` allowed origins):
   > Tự động tối ưu hóa hình ảnh, cho phép thay đổi kích thước. Tối ưu hóa hình ảnh theo yêu cầu, điều này không làm giảm tốc độ tải của website.
 - Zero Config:
